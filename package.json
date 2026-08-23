@@ -1,0 +1,14 @@
+{
+  "name": "vanguard-duel",
+  "version": "0.1.0",
+  "description": "A minimal Cardfight!! Vanguard rules-engine you can play online with one other person.",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "ws": "^8.21.3"
+  }
+}
