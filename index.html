@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Vanguard Duel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <div id="status-banner" class="hidden"></div>
+
+    <div id="mulligan-screen" class="screen hidden">
+      <h2>Mulligan</h2>
+      <p>Select any cards you'd like to send back and redraw, then confirm.</p>
+      <div id="mulligan-hand" class="hand"></div>
+      <button id="mulligan-confirm">Confirm Hand</button>
+    </div>
+
+    <div id="board" class="screen hidden">
+      <div id="opponent-area" class="player-area"></div>
+      <div id="battle-strip"></div>
+      <div id="phase-bar"></div>
+      <div id="you-area" class="player-area"></div>
+      <div id="hand-area" class="hand"></div>
+      <div id="action-bar"></div>
+      <div id="log-panel"></div>
+    </div>
+
+    <div id="reveal-overlay" class="hidden">
+      <div id="reveal-modal">
+        <div id="reveal-label"></div>
+        <div id="reveal-card-wrap">
+          <div id="reveal-card" class="card"></div>
+        </div>
+        <div id="reveal-sub"></div>
+        <div id="reveal-hint">click to continue</div>
+      </div>
+    </div>
+
+    <div id="toast-stack"></div>
+  </div>
+  <script src="client.js"></script>
+</body>
+</html>
